@@ -13,6 +13,10 @@ describe("Task", function() {
   assert.equal(task1.difficultyLevel, "easy");
   });
 
+  it("should have urgencyLevel", function() {
+  assert.equal(task1.urgencyLevel, "low");
+  });
+
 
 
 });
