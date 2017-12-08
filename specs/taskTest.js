@@ -30,14 +30,4 @@ describe("Task", function() {
     assert.equal(task1.isComplete, true);
   });
 
-
-
-
 });
-
-// Create a constructor to create Task objects
-//
-// A task has a difficulty level
-// A task has an urgency level
-// A task has a reward
-// A task should be able to be marked as completed
