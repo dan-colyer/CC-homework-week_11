@@ -10,23 +10,23 @@ describe("Hero", function() {
   });
 
   it("should have name", function() {
-  assert.equal(hero1.name, "Mrs Doubtfire");
+  assert.strictEqual(hero1.name, "Mrs Doubtfire");
   });
 
   it("should have favourite food", function() {
-  assert.equal(hero1.favoutireFood, "Lobster");
+  assert.strictEqual(hero1.favoutireFood, "Lobster");
   });
 
   it("health should start at 100", function() {
-  assert.equal(hero1.health, 100);
+  assert.strictEqual(hero1.health, 100);
   });
 
   it("tasks should start empty", function() {
-  assert.equal(hero1.tasks.length, 0);
+  assert.strictEqual(hero1.tasks.length, 0);
   });
 
   it("can talk, saying their name", function() {
-  assert.equal(hero1.talk(), "Smithe, not Smith, dear!");
+  assert.strictEqual(hero1.talk(), "Smithe, not Smith, dear!");
   });
 
 });

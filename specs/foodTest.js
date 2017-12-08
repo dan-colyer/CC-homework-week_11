@@ -10,7 +10,7 @@ describe("Food", function() {
   });
 
   it("should have name", function() {
-  assert.equal(food1.name, "Apple");
+  assert.strictEqual(food1.name, "Apple");
   });
 
 });
