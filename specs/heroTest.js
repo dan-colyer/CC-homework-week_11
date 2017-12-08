@@ -17,6 +17,10 @@ describe("Hero", function() {
   assert.equal(hero1.favoutireFood, "Lobster");
   });
 
+  it("health should start at 100", function() {
+  assert.equal(hero1.health, 100);
+  });
+
 });
 
 
