@@ -10,6 +10,11 @@ describe("Hero", function() {
   var apple;
   var lobster;
   var task1;
+  var task2;
+  var task3;
+  var task4;
+  var task5;
+  var task6;
 
   beforeEach("Setup", function() {
     hero1 = new Hero("Mrs Doubtfire", "Lobster");
@@ -18,6 +23,11 @@ describe("Hero", function() {
     lobster = new Food("Lobster", 5);
 
     task1 = new Task("easy", "low", 15);
+    task2 = new Task("med", "low", 10);
+    task3 = new Task("easy", "med", 11);
+    task4 = new Task("hard", "med", 55);
+    task5 = new Task("hard", "high", 30);
+    task6 = new Task("easy", "high", 35);
   });
 
   it("should have name", function() {
@@ -53,6 +63,18 @@ describe("Hero", function() {
   it("task can be added to tasks", function() {
     hero1.addTask(task1);
     assert.strictEqual(hero1.tasks.length, 1);
+  });
+
+  it("tasks can be sorted by difficulty, urgency or reward", function() {
+    hero1.addTask(task1);
+    hero1.addTask(task2);
+    hero1.addTask(task3);
+    hero1.addTask(task4);
+    hero1.addTask(task5);
+    hero1.addTask(task6);
+    assert.strictEqual(hero1.tasks.length, 6);
+    assert.strictEqual(hero1.sortTasksBy("difficulty"), "?");
+
   });
 
 });

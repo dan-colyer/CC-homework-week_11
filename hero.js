@@ -23,6 +23,16 @@ Hero.prototype.addTask = function(task) {
   this.tasks.push(task);
 }
 
+Hero.prototype.sortTasksBy = function(sortBy) {
+  let newArray = [];
+  for(task of this.tasks) {
+    newArray.push(task);
+  }
+  return newArray;
+}
+
+
+
 module.exports = Hero;
 
 // var items = [
