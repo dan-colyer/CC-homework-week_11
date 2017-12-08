@@ -12,7 +12,11 @@ Hero.prototype.talk = function() {
 }
 
 Hero.prototype.eatFood = function(food) {
-  this.health += food.replenishmentValue;
+  if (this.favoutireFood === food.name) {
+    this.health *= 1.5;
+  } else {
+    this.health += food.replenishmentValue;
+  }
 }
 
 module.exports = Hero;
