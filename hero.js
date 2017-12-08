@@ -7,8 +7,8 @@ function Hero(name, favoutireFood) {
   this.tasks = [];
 }
 
-// Record.prototype.prettyPrint = function() {
-//   return "Artist: " + this.artist + ", Title: " + this.title + ", Price: " + this.price
-// }
+Hero.prototype.talk = function() {
+  return "Smithe, not Smith, dear!";
+}
 
 module.exports = Hero;
