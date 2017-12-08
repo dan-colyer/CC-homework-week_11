@@ -22,6 +22,12 @@ describe("Task", function() {
   });
 
 
+    it("isComplete starts false", function() {
+    assert.equal(task1.isComplete, false);
+    });
+
+
+
 
 });
 
