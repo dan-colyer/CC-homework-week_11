@@ -7,8 +7,8 @@ function Task(difficultyLevel, urgencyLevel, reward) {
   this.isComplete = false;
 }
 
-Task.prototype.talk = function() {
-  return "Smithe, not Smith, dear!";
+Task.prototype.completeTask = function() {
+  this.isComplete = true;
 }
 
 module.exports = Task;
