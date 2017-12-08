@@ -11,7 +11,11 @@ describe("Hero", function() {
 
   it("should have name", function() {
   assert.equal(hero1.name, "Mrs Doubtfire");
-});
+  });
+
+  it("should have favourite food", function() {
+  assert.equal(hero1.favoutireFood, "Lobster");
+  });
 
 });
 
