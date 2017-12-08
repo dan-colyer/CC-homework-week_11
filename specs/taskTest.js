@@ -17,6 +17,10 @@ describe("Task", function() {
   assert.equal(task1.urgencyLevel, "low");
   });
 
+  it("should have reward", function() {
+  assert.equal(task1.reward, "15");
+  });
+
 
 
 });
