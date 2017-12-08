@@ -21,6 +21,10 @@ describe("Hero", function() {
   assert.equal(hero1.health, 100);
   });
 
+  it("tasks should start empty", function() {
+  assert.equal(hero1.tasks.length, 0);
+  });
+
 });
 
 
