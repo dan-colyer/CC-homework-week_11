@@ -11,4 +11,8 @@ Hero.prototype.talk = function() {
   return "Smithe, not Smith, dear!";
 }
 
+Hero.prototype.eatFood = function(food) {
+  this.health += food.replenishmentValue;
+}
+
 module.exports = Hero;

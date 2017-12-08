@@ -3,7 +3,7 @@ var Food = require("../food.js");
 
 describe("Food", function() {
 
-  var hero1;
+  var food1;
 
   beforeEach("Setup", function() {
     food1 = new Food("Apple", 20);
@@ -18,13 +18,3 @@ describe("Food", function() {
   });
 
 });
-
-
-
-
-
-
-// Create a constructor to create Food objects.
-//
-// Food should have a name
-// Food should have a replenishment value
