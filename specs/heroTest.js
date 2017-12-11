@@ -72,8 +72,12 @@ describe("Hero", function() {
     hero1.addTask(task4);
     hero1.addTask(task5);
     hero1.addTask(task6);
+    hero1.sortTasks();
     assert.strictEqual(hero1.tasks.length, 6);
-    assert.strictEqual(hero1.sortTasksBy("difficulty"), "?");
+    // hero1.sortTasks();
+    expected = [task1, task2];
+    assert.deepStrictEqual(hero1.sortTasks(), expected);
+    // assert.deepStrictEqual(hero1.sortTasksBy("difficulty"), "?");
 
   });
 

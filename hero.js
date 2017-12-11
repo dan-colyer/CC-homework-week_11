@@ -23,13 +23,35 @@ Hero.prototype.addTask = function(task) {
   this.tasks.push(task);
 }
 
-Hero.prototype.sortTasksBy = function(sortBy) {
-  let newArray = [];
-  for(task of this.tasks) {
-    newArray.push(task);
-  }
-  return newArray;
+// Hero.prototype.sortTasks = function() {
+//   this.tasks.sort(function (a, b) {
+//     return a.difficultyLevel - b.difficultyLevel;
+//   });
+//   return this.tasks;
+// }
+
+Hero.prototype.sortTasks = function() {
+  this.tasks.sort(function (prev, next) {
+    if (prev.difficultyLevel < next.difficultyLevel)
+      return -1;
+    if (prev.difficultyLevel > next.difficultyLevel)
+      return 1;
+    return 0;
+  });
+  return this.tasks;
 }
+
+
+
+// objs.sort(compare);
+
+// Hero.prototype.sortTasksBy = function(sortBy) {
+//   let newArray = [];
+//   for(task of this.tasks) {
+//     newArray.push(task);
+//   }
+//   return newArray;
+// }
 
 
 
